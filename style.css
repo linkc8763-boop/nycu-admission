@@ -1,0 +1,167 @@
+body{
+  margin:0;
+  font-family:"PMingLiU","MingLiU","Noto Sans TC",serif;
+  background:#c7dff5;
+  color:#000;
+}
+
+.login-page{
+  min-height:100vh;
+}
+
+.login-wrapper{
+  width:100%;
+  text-align:center;
+  padding-top:36px;
+}
+
+.login-title{
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.login-table{
+  margin:0 auto;
+  border-collapse:collapse;
+  background:#d9ebf1;
+  border:1px solid #7ea4b5;
+}
+
+.login-table th,
+.login-table td{
+  border:1px solid #7ea4b5;
+  padding:3px 4px;
+  font-size:14px;
+}
+
+.login-table-head{
+  background:linear-gradient(#a8c7d8,#cfe2eb);
+  font-weight:normal;
+}
+
+.label-cell{
+  white-space:nowrap;
+  background:#d8edf5;
+  text-align:left;
+  padding-left:6px !important;
+}
+
+.login-table input{
+  width:92px;
+  height:18px;
+  border:1px solid #7f9db9;
+  background:#fff;
+}
+
+.login-actions{
+  text-align:center;
+}
+
+.login-actions button,
+.bottom-actions button{
+  font-family:inherit;
+  font-size:13px;
+  padding:1px 10px;
+  margin:0 2px;
+  border:1px solid #999;
+  background:#efefef;
+  cursor:pointer;
+}
+
+.small-actions button{
+  padding:1px 6px;
+}
+
+.result-page{
+  background:#ffffff;
+  padding:20px 0 40px;
+}
+
+.sheet{
+  width:min(92vw, 760px);
+  margin:0 auto;
+  border:1px solid #b7b7b7;
+  background:#fff;
+  padding:8px 6px 20px;
+}
+
+.sheet-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:8px;
+  font-size:14px;
+}
+
+.sheet-system{
+  font-size:16px;
+  padding-top:14px;
+}
+
+.sheet-year{
+  text-align:right;
+  line-height:1.5;
+  font-size:14px;
+}
+
+.info-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:8px;
+}
+
+.info-table td{
+  border:1px solid #8e8e8e;
+  padding:4px 6px;
+  font-size:14px;
+}
+
+.stub{
+  width:28px;
+  text-align:center;
+  line-height:1.2;
+  white-space:pre-line;
+}
+
+.name-block{
+  width:120px;
+}
+
+.group-block{
+  width:auto;
+}
+
+.scores-block,
+.result-list{
+  font-size:14px;
+  line-height:1.6;
+  margin:10px 4px;
+}
+
+.bottom-actions{
+  margin-top:18px;
+  text-align:center;
+}
+
+@media (max-width: 640px){
+  .sheet{
+    width:95vw;
+    padding:8px 4px 18px;
+  }
+  .sheet-header{
+    font-size:12px;
+  }
+  .sheet-system{
+    font-size:15px;
+  }
+  .scores-block,
+  .result-list,
+  .info-table td{
+    font-size:13px;
+  }
+}
+@media print{
+  .bottom-actions{display:none;}
+  body{background:#fff;}
+  .sheet{border:none; width:100%;}
+}

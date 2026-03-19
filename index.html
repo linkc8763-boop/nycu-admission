@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>台灣聯合大學系統115學年度碩士班招生查詢及列印</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+  <div class="login-wrapper">
+    <div class="login-title">台灣聯合大學系統115學年度碩士班招生查詢及列印</div>
+
+    <table class="login-table">
+      <tr>
+        <th colspan="2" class="login-table-head">請輸入您的報名序號和密碼</th>
+      </tr>
+      <tr>
+        <td class="label-cell">報名序號</td>
+        <td><input id="serial" type="text" autocomplete="off" /></td>
+      </tr>
+      <tr>
+        <td class="label-cell">密碼</td>
+        <td><input id="password" type="password" autocomplete="off" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="login-actions">
+          <button id="loginBtn">登入</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="login-actions small-actions">
+          <button type="button" onclick="alert('此為展示頁面，未提供忘記密碼功能')">忘記密碼</button>
+          <button type="button" onclick="alert('此為展示頁面，未提供忘記序號功能')">忘記序號</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
